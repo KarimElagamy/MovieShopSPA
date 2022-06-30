@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from './Core/core.module';
 import { SharedModule } from './Shared/shared.module';
+import { MoviesModule } from './Public/movies.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SharedModule } from './Shared/shared.module';
     FormsModule,
     NgbModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    MoviesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
