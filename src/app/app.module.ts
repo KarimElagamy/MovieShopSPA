@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from './Core/core.module';
 import { SharedModule } from './Shared/shared.module';
 import { MoviesModule } from './Public/movies.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MoviesModule } from './Public/movies.module';
     NgbModule,
     CoreModule,
     SharedModule,
-    MoviesModule
+    MoviesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
