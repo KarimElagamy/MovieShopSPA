@@ -1,1 +1,21 @@
-<p>genre works!</p>
+<div class="container-fluid">
+    <div class="alert alert-primary" role="alert" *ngIf="deleteFlag">
+        Genre Deleted Successfully!
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="Let g of genres">
+                <th scope="row">{{g.id}}</th>
+                <th scope="row">{{g.name}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
