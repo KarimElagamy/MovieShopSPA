@@ -12,9 +12,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr >
-                
-            </tr>
+            <!-- <tr *ngFor="Let g of genres; index as i">
+                <td scope="row">{{i+1}}</td>
+                <td>{{g.id}}</td>
+                <td>{{g.name}}</td>
+                <td><input type="buton" class="btn btn-link" value="Add" [routerLink]="'/addGenre'" /> &emsp; &emsp; <input type="button" class="btn btn-link" value="Delete" (click)="deleteGenre(g.id)" /> </td>
+            </tr> -->
         </tbody>
     </table>
 </div>
