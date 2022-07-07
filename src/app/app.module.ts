@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -9,6 +9,7 @@ import { SharedModule } from './Shared/shared.module';
 import { MoviesModule } from './Public/movies.module';
 import { HttpClientModule } from '@angular/common/http';
 import { GenreModule } from './Public/genre/genre.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GenreModule } from './Public/genre/genre.module';
     SharedModule,
     MoviesModule,
     GenreModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
