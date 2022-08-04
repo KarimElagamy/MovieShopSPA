@@ -11,7 +11,7 @@ export class MovieCardsService {
   constructor(private http:HttpClient) { }
 
   getTopGrossingMovies():Observable<MovieCard[]>{
-    return this.http.get<MovieCard[]>('https://localhost:7079/api/Movies/top-grossing');
+    return this.http.get<MovieCard[]>('https://movieshopapi.azurewebsites.net/api/Movies/top-grossing');
   }
 
   getMovieDetails(id:number){
